@@ -1,0 +1,57 @@
+.App{
+  background-image: url('./02.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+h1{
+  background-color: rgb(222, 210, 186);
+  padding: 10px;
+  font-size: 50px;
+  border-radius: 10px;
+  color: rgb(4, 38, 4);
+}
+.input{
+  width: 550px;
+  height: 30px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  outline-style: none;
+}
+button{
+  padding: 10px;
+  margin-top: 20px;
+  width: 120px;
+  background-color: rgb(69, 112, 69);
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+button:hover{
+  box-shadow: 3px 3px 3px rgb(74, 72, 72);
+}
+.users_text{
+  background-color: rgb(222, 210, 186);
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 10px;
+  color: rgb(4, 38, 4);
+  width: 550px;
+}
+.button_edit{
+  cursor: pointer;
+  font-size: 25px;
+  color: rgb(5, 74, 5);
+  margin: 0 auto;
+}
