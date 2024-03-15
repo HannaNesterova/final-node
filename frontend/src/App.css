@@ -3,7 +3,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  background-attachment: fixed; 
+  width: 100%;
+  min-height: 100vh;
 }
 
 .input-box{
@@ -30,7 +32,7 @@ h1{
 }
 button{
   padding: 10px;
-  margin-top: 20px;
+  margin: 20px 0px;
   width: 120px;
   background-color: rgb(69, 112, 69);
   border: none;
@@ -42,12 +44,13 @@ button:hover{
   box-shadow: 3px 3px 3px rgb(74, 72, 72);
 }
 .users_text{
-  background-color: rgb(222, 210, 186);
+  background-color: rgb(192, 159, 133);
   padding: 10px;
   font-size: 18px;
   border-radius: 10px;
-  color: rgb(4, 38, 4);
+  color: rgb(255, 255, 255);
   width: 550px;
+  margin-bottom: 20px;
 }
 .button_edit{
   cursor: pointer;

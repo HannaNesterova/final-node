@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const resolutionSchema = new mongoose.Schema({
-    name:{ //or title
+    name:{
         type: String,
         required:true
     }
