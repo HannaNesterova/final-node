@@ -1,3 +1,12 @@
+.main_box{
+  padding: 30px;    
+  margin: 0 auto;
+  text-align: center;
+  background-color: rgb(1, 66, 24);
+  border-radius: 30px;
+  color: white;
+}
+
 .App{
   background-image: url('./02.jpeg');
   background-position: center;
@@ -6,6 +15,15 @@
   background-attachment: fixed; 
   width: 100%;
   min-height: 100vh;
+}
+p{
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 5px;
 }
 
 .input-box{
@@ -57,4 +75,17 @@ button:hover{
   font-size: 25px;
   color: rgb(5, 74, 5);
   margin: 0 auto;
+}
+
+@media all and (max-width:550px){
+  .input{
+    width: 350px;
+  }
+  .users_text{
+    width: 340px;
+    font-size: 16px;
+  }
+  h1{
+    font-size: 30px;
+  }
 }

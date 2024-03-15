@@ -22,6 +22,7 @@ function MainPage(){
     return(
         <div className="input-box">
             <h1>My resolutions for this year</h1>
+            <p>You can make several decisions to change your life for the better! </p>
                 <input className="input"
                 type="text"
                 placeholder="Add your text..."
