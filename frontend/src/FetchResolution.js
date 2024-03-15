@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const localhost = 'http://localhost:8000';
+const localhost = 'https://final-node-backend.onrender.com';
 
 const getAllResolutions = (setResolution) => {
     axios.get(localhost)
