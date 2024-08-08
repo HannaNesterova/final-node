@@ -6,15 +6,13 @@ import MainPage from './MainPage';
 function App() {
 
   const [yesCount, setYesCount] = useState(false);
-  const [noCount, setNoCount] = useState(false);
   const [voted, setVoted] = useState(false);
 
   const handleVote = (vote) => {
     if (!voted) {
       if (vote === 'yes') {
         setYesCount(true);
-      } else if (vote === 'no') {
-        setNoCount(true);
+      } else {
         Swal.fire({
           icon: "success",
           title: "I'm sorry...",
@@ -34,7 +32,7 @@ function App() {
         <div className='main_box'>
           <h2>Do you want to change your life? </h2>
           <button onClick={() => handleVote('yes')}>yes</button>
-          <button onClick={() => handleVote('no')}>no</button>
+          <button onClick={handleVote}>no</button>
         </div>
       )}
       {voted && yesCount && <MainPage />}
