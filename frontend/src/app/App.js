@@ -1,16 +1,15 @@
-import React, { useState } from 'react';
-import Swal from 'sweetalert2';
-import './App.css';
-import MainPage from './MainPage';
+import React, { useState } from "react";
+import Swal from "sweetalert2";
+import "./App.css";
+import MainPage from "../MainPage";
 
 function App() {
-
   const [yesCount, setYesCount] = useState(false);
   const [voted, setVoted] = useState(false);
 
   const handleVote = (vote) => {
     if (!voted) {
-      if (vote === 'yes') {
+      if (vote === "yes") {
         setYesCount(true);
       } else {
         Swal.fire({
@@ -23,15 +22,14 @@ function App() {
       }
       setVoted(true);
     }
-  }
-
+  };
 
   return (
     <div className="App">
       {!voted && (
-        <div className='main_box'>
+        <div className="main_box">
           <h2>Do you want to change your life? </h2>
-          <button onClick={() => handleVote('yes')}>yes</button>
+          <button onClick={() => handleVote("yes")}>yes</button>
           <button onClick={handleVote}>no</button>
         </div>
       )}
